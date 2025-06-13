@@ -1,0 +1,12 @@
+{
+  "template_name": "エンドスライド",
+  "description": "発表の最後に使う締めのスライド",
+  "use_case_examples": ["まとめ", "ご清聴ありがとうございました"],
+  "objects": [
+    {
+      "type": "text",
+      "name": "end_message",
+      "role": "締めのメッセージ"
+    }
+  ]
+}

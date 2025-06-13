@@ -1,0 +1,29 @@
+{
+  "template_name": "タイトルスライド",
+  "description": "プレゼンテーションの冒頭に使うタイトル用スライド",
+  "use_case_examples": [
+    "このテンプレートは、プレゼンテーションの冒頭でタイトル、発表者名、日付などを明確に示したい場合に使用します。例えば、学会発表や社内報告会などで、聴衆に発表の概要を最初に伝える際に最適です。"
+  ],
+  "objects": [
+    {
+      "type": "text",
+      "name": "title",
+      "role": "スライドの主タイトル"
+    },
+    {
+      "type": "text",
+      "name": "subtitle",
+      "role": "サブタイトルや発表者名"
+    },
+    {
+      "type": "text",
+      "name": "date",
+      "role": "日程"
+    },
+    {
+      "type": "text",
+      "name": "presenter",
+      "role": "発表者"
+    }
+  ]
+}
