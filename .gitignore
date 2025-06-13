@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Sample and example files
+*.example
+*.sample
+test_*.md
+要件定義書_*.md
