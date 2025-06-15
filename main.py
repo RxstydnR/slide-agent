@@ -1,24 +1,24 @@
 import os
 import sys
 from pathlib import Path
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import argparse
 
 from src.workflow import SlideGenerationWorkflow
 from src.models import SlideGenerationResponse
 
-def load_environment():
-    """環境変数を読み込み"""
-    load_dotenv()
+# def load_environment():
+#     """環境変数を読み込み"""
+#     load_dotenv()
     
-    openai_api_key = os.getenv("OPENAI_API_KEY")
-    if not openai_api_key:
-        print("Error: OPENAI_API_KEY environment variable is not set.")
-        print("Please create a .env file with your OpenAI API key:")
-        print("OPENAI_API_KEY=your_api_key_here")
-        sys.exit(1)
+#     openai_api_key = os.getenv("OPENAI_API_KEY")
+#     if not openai_api_key:
+#         print("Error: OPENAI_API_KEY environment variable is not set.")
+#         print("Please create a .env file with your OpenAI API key:")
+#         print("OPENAI_API_KEY=your_api_key_here")
+#         sys.exit(1)
     
-    return openai_api_key
+#     return openai_api_key
 
 def read_markdown_file(file_path: str) -> str:
     """マークダウンファイルを読み込み"""
@@ -42,7 +42,7 @@ def main():
     args = parser.parse_args()
     
     # 環境変数を読み込み
-    openai_api_key = load_environment()
+    # openai_api_key = load_environment()
     
     # 入力ファイルを読み込み
     print(f"マークダウンファイルを読み込み中: {args.input_file}")
@@ -50,7 +50,7 @@ def main():
     
     # ワークフローを初期化
     print("スライド生成ワークフローを初期化中...")
-    workflow = SlideGenerationWorkflow(openai_api_key)
+    workflow = SlideGenerationWorkflow()
     
     try:
         # ワークフローを実行
